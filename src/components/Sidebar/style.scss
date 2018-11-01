@@ -9,10 +9,11 @@
     }
     &__author {
         &-photo {
-            display: inline-block;
-            margin-bottom: 0;
-            border-radius: 50%;
-            background-clip: padding-box;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            width: 80%;
+            z-index: 9999999;
         }
         &-title {
             font-size: $typographic-base-font-size * 1.125;
@@ -37,6 +38,66 @@
         color: lighten($color-gray, 18%);
         font-size: $typographic-small-font-size;
     }
+}
+
+// ---- CLOUD ANIMATION ---- //
+
+$size: 100%;
+$duration: .5s;
+$bg: #e76f51;
+
+$cloud-height: 11%;
+$cloud-width: 50%;
+$cloud-delay: 1.25s;
+$cloud-bg: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+
+$parallax-ratio: 1.618;
+$cloud-order: 1 4 2 5 3;
+
+.loader {
+    background: linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%);
+  width: 100%;
+  height: 300px;
+  position: relative;
+  clip-path: inset(0 0 0 0);
+}
+
+.cloud {
+  background: $cloud-bg;
+  width: $cloud-width;
+  position: absolute;
+  z-index: 1;
+  left: 35%;
+  animation: float-across $duration linear infinite;
+  opacity: 0;
+  
+  @each $position in $cloud-order {
+    $i: index($cloud-order, $position);
+    &:nth-child(#{$i + 1}) {
+      $time: $duration * $i;
+      animation-delay: $time;
+      animation-duration: $time * $parallax-ratio + $cloud-delay;
+      bottom: $cloud-height * 1.515 * $position;
+      height: $cloud-height + 1% * (length($cloud-order) - $position);
+    }
+  }
+}
+
+@keyframes float-across {
+  0% {
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%);
+    opacity: 1;
+  }
+}
+
+.showbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @include breakpoint-sm {
