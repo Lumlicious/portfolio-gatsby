@@ -21,14 +21,14 @@ class Sidebar extends React.Component {
     const authorBlock = (
       <div>
         <Link to="/">
-          <div class="showbox">
-            <div class="loader">
+          <div className="showbox">
+            <div className="loader">
               <img src={profilePic} alt={author.name} className="sidebar__author-photo"/>
-              <div class="cloud"></div>
-              <div class="cloud"></div>
-              <div class="cloud"></div>
-              <div class="cloud"></div>
-              <div class="cloud"></div>
+              <div className="cloud"></div>
+              <div className="cloud"></div>
+              <div className="cloud"></div>
+              <div className="cloud"></div>
+              <div className="cloud"></div>
             </div>
           </div>
         </Link>

@@ -3,11 +3,11 @@ const pxtorem = require('postcss-pxtorem')
 
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
+    url: 'https://www.chadlumley.com',
+    title: 'Chad Lumley',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-    copyright: '© All rights reserved.',
+      'Consultant To All Fields of a Mathematical Nature. Currently making the web a better place at projekt202.',
+    copyright: '© Chad Lumley',
     disqusShortname: '',
     menu: [
       {
@@ -18,17 +18,17 @@ module.exports = {
         label: 'About me',
         path: '/about/',
       },
-      {
-        label: 'Contact me',
-        path: '/contact/',
-      },
+      // {
+      //   label: 'Contact me',
+      //   path: '/contact/',
+      // },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
+      name: 'Chad Lumley',
+      email: 'me@chadlumley.com',
       telegram: '#',
-      twitter: '#',
-      github: '#',
+      twitter: 'https://twitter.com/lumlicious_c',
+      github: 'https://github.com/Lumlicious',
       rss: '#',
       vk: '#',
     },
@@ -121,7 +121,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' },
+      options: { trackingId: 'UA-27281564-2' },
     },
     {
       resolve: 'gatsby-plugin-google-fonts',
