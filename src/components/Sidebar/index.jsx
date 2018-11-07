@@ -42,9 +42,8 @@ class Sidebar extends React.Component {
         ) : (
           <h2 className="sidebar__author-title">
             <Link className="sidebar__author-title-link" to="/">
-              {/* {author.name} */}
-              <div className="sidebar__author-title-first-name">CHAD</div>
-              <div className="sidebar__author-title-last-name">LUMLEY</div>
+              {author.name}
+              <div className="sidebar__author-title-job">SR. FRONT END ENGINEER</div>
             </Link>
           </h2>
         )}
