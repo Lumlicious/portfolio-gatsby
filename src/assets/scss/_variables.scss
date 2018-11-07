@@ -3,14 +3,17 @@
  */
 
 // Colors
-$color-base: #222;
-$color-primary: #5d93ff;
-$color-secondary: #f7a046;
+$color-base: #2B2D42;
+$color-primary: #8D99AE;
+$color-secondary: #EF233C;
+$color-secondary-darker: #D90429;
 
 $color-white: lighten($color-base, 100%);
 $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
+
+$global-background-color: #EDF2F4;
 
 // Typographic
 $typographic-font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;

@@ -9,6 +9,7 @@ html {
 body {
     font-family: $typographic-font-family;
     color: $typographic-base-font-color;
+    background-color: $global-background-color;
     line-height: $typographic-base-line-height;
     font-size: $typographic-base-font-size;
     -ms-text-size-adjust: 100%;
