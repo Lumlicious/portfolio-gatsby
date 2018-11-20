@@ -24,7 +24,7 @@ The final results for the project can be found here: [Github - Classic Pong](htt
 
 ## Lets get started!
 
-![Pong](https://upload.wikimedia.org/wikipedia/commons/f/f8/Pong.png)
+![Pong](./Pong.png)
 (From Wikipedia)
 
 To begin this project we'll need a few things:
@@ -300,7 +300,7 @@ Now that we have some things to stick on the page, let's start getting the scene
 
 If you haven't already, add a new GameObject to the scene and attach the GameManager.cs script as a component. Drag the Ball and paddle prefabs to the script arguments in the inspector.
 
-![Game Manager Settings](./Unity - Game Manager settings.PNG)
+![Game Manager Settings](./Unity-Game-Manager-Settings.PNG)
 
 ### Camera
 
@@ -315,7 +315,7 @@ To set the camera up we need to make few changes from the default:
 
 Now we need to add the imported `PixelArtCamera.cs` script to the camera to render out the pixel perfect shaders on our sprites.
 
-![Camera Settings](./Unity - Camera Settings.PNG)
+![Camera Settings](./Unity-Camera-Settings.PNG)
 
 
 ### UI (Canvas)
@@ -329,7 +329,7 @@ To display the score we need to create a UI layer where the text can live. Right
     - UI Scale Mode: Scale with Screen Size 
     - Reference resolution: 90 x 160 - Screen Match Mode: Expand
 
-![Canvas Settings](./Unity - Canvas Settings.PNG)
+![Canvas Settings](./Unity-Canvas-Settings.PNG)
 
 ### Score Boxes
 
@@ -337,7 +337,7 @@ For the score boxes I just used the basic unity Text component by right-clicking
 
 Create two of these. Name one `Player1Score` and the other `Player2Score`. Use the `Pong Score` font and drag the `PixelArtFont` material to the Material input.
 
-![Score Settings](./Unity - Score Settings.PNG)
+![Score Settings](./Unity-Score-Settings.PNG)
 
 ### Dashes
 
@@ -347,7 +347,7 @@ For the dashes we can just manually place them on the screen in the center of th
 
 Go to `Edit --> Project Settings --> Input` to assign the input keys for the different players. Player one will use the `s` and `w` keys and player two will use the `up` and `down` arrows.
 
-![Input Settings](./Unity - Player Input Settings.PNG)
+![Input Settings](./Unity-Player-Input-Settings.PNG)
 
 ### Score Manager
 
@@ -445,7 +445,7 @@ In the `Update()` method for `Ball.cs`:
 
 ## Conclusion
 
-![Pong Final](./Pong Animation.gif)
+![Pong Final](./Pong-Animation.gif)
 
 Hopefully you should be able to hit play and start Pong-ing away! Try tweaking the settings for the ball and paddle speeds to find a perfect balance.
 
