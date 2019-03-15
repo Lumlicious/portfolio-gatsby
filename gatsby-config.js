@@ -4,9 +4,9 @@ const pxtorem = require('postcss-pxtorem')
 module.exports = {
   siteMetadata: {
     url: 'https://www.chadlumley.com',
-    title: 'Chad Lumley',
+    title: 'Chad Lumley - Technically Technical Blog',
     subtitle:
-      `General Consultant To All Fields of a Mathematical Nature. Currently improving the world one webapp at a time at projekt202.`,
+      `General Consultant To All Fields of a Mathematical Nature. Currently exploring game development, machine learning, and various programmatical oddities.`,
     copyright: '© Chad Lumley',
     disqusShortname: '',
     menu: [
